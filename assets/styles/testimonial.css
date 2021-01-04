@@ -1,0 +1,124 @@
+/* !::::::: TESTIMONIAL ::::::: */
+.testimonial {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonial .title {
+  width: 35vw;
+}
+
+.carousel {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 582px;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+  transition: var(--transition);
+}
+
+.carousel .picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.testimonial-text {
+  width: 460px;
+  overflow: hidden;
+}
+
+.testimonial-text .title {
+  font-size: 24px;
+}
+
+.testimonial-text .body-text {
+  margin: 20px 0 30px;
+  margin-left: 12px;
+}
+
+.testimonial-text small {
+  margin-left: 12px;
+}
+
+.btn-control {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  font-size: 18px;
+  color: var(--clr-main);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn-control:focus {
+  outline: none;
+}
+
+.btn-control:active {
+  transform: scale(0.8);
+}
+
+.prev {
+  left: 1vw;
+}
+
+.next {
+  left: 5vw;
+}
+
+@media (max-width: 992px) {
+  /* !::::::: TESTIMONIAL ::::::: */
+
+  .testimonial .container {
+    flex-direction: column;
+  }
+
+  .testimonial h1.title {
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .carousel {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .carousel .picture {
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonial-text {
+    width: 72.7vw;
+    max-width: 328px;
+  }
+
+  .testimonial-text .title {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .prev {
+    left: 200px;
+  }
+
+  .next {
+    left: 250px;
+  }
+}

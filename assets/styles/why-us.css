@@ -1,0 +1,53 @@
+/* !::::::: WHY US ::::::: */
+.why-us {
+  text-align: center;
+  background-image: var(--linear);
+  padding: 2rem 0;
+}
+
+.why-us .body-text {
+  margin: 10px 0 40px;
+}
+
+.benefits {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.benefits img {
+  margin-right: 10px;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+}
+
+.benefits .title {
+  font-size: 18px;
+}
+
+@media (max-width: 992px) {
+  /* !::::::: WHY US ::::::: */
+  .why-us {
+    text-align: left;
+  }
+
+  .benefits {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .benefits img {
+    width: 30px;
+  }
+
+  .benefit:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .benefits .title {
+    font-size: 14px;
+  }
+}
