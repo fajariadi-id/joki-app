@@ -1,0 +1,77 @@
+/* !::::::: ASIDE - OUR TEAM ::::::: */
+.profile {
+  height: 100vh;
+  background-image: var(--linear);
+  padding: 5vh 0;
+  text-align: center;
+}
+
+.profile-pic {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+}
+
+.profile .card {
+  width: 300px;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.card small {
+  display: block;
+  margin: 10px 0 20px;
+}
+
+.card .name {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.profile a {
+  display: inline-block;
+  color: var(--clr-main);
+  transition: var(--transition);
+}
+
+.profile a:hover {
+  transform: scale(1.1);
+}
+
+.fa-arrow-right {
+  transition: var(--transition);
+}
+
+.profile a:hover .fa-arrow-right {
+  transform: translateX(10px);
+}
+
+@media (max-width: 992px) {
+  /* !::::::: ASIDE - OUR TEAM ::::::: */
+  .profile {
+    height: fit-content;
+  }
+
+  .profile-pic {
+    height: 100px;
+    width: 100px;
+  }
+
+  .profile .card-container {
+    margin-top: 30px;
+  }
+
+  .profile .card {
+    width: 250px;
+    margin: 10px 0;
+  }
+
+  .card .name {
+    font-size: 20px;
+  }
+
+  .profile a {
+    margin-top: 30px;
+  }
+}

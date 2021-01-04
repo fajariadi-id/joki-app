@@ -1,0 +1,125 @@
+/* !::::::: PRICELIST ::::::: */
+.pricelist {
+  margin-top: 15vh;
+  padding: 5vh;
+  height: 100vh;
+  background-image: var(--linear);
+}
+
+.pricelist-text {
+  text-align: center;
+}
+
+.pricelist-text .body-text {
+  margin-top: 10px;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+}
+
+.card {
+  width: 250px;
+  padding: 30px;
+  border-radius: var(--radius);
+  border: 2px solid var(--clr-black);
+  margin: 15px;
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: var(--shadow);
+}
+
+.card.best {
+  border: none;
+  background-color: var(--clr-main);
+  color: var(--clr-white);
+  transition: var(--transition);
+  transform: scale(1.2);
+}
+
+.best:hover {
+  transform: scale(1.2) translateY(-7px);
+}
+
+.card.best .btn {
+  background-color: var(--clr-white);
+  color: var(--clr-main);
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+.price {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.price span {
+  font-size: 20px;
+}
+
+.featured p {
+  margin: 10px;
+}
+
+.card .btn {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.card .btn:hover {
+  background-color: var(--clr-main-hover);
+}
+
+.card.best .btn:hover {
+  background-color: var(--clr-main-light);
+}
+
+@media (max-width: 992px) {
+  /* !::::::: PRICELIST ::::::: */
+  .pricelist {
+    height: fit-content;
+  }
+
+  .card-container {
+    margin-top: 20px;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .card {
+    margin: 10px;
+  }
+
+  .card.best {
+    transform: scale(1);
+  }
+
+  .best:hover {
+    transform: translateY(-7px);
+  }
+
+  .card.best .btn {
+    background-color: var(--clr-white);
+    color: var(--clr-main);
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 36px;
+  }
+
+  .price span {
+    font-size: 14px;
+  }
+}

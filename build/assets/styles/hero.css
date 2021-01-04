@@ -1,0 +1,70 @@
+/* !::::::: HERO ::::::: */
+.hero {
+  background: url("../img/heroBg.svg") no-repeat;
+  background-position: 60vw -80px;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.hero-img img {
+  width: 40vw;
+}
+
+.hero-text {
+  width: 55vw;
+}
+
+.hero-text .title {
+  width: 500px;
+}
+
+.hero .body-text {
+  margin: 15px 0 40px;
+}
+
+.hero .btn:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-5px);
+}
+
+.hero .btn-pricelist {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--clr-black);
+  border: 2px solid var(--clr-black);
+  margin-left: 10px;
+}
+
+@media (max-width: 992px) {
+  /* !::::::: HERO ::::::: */
+  .hero {
+    background-position: 0 -100px;
+  }
+
+  .hero .container {
+    position: relative;
+    padding-top: 40vh;
+  }
+
+  .hero-img img {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text .title {
+    width: 100%;
+  }
+}

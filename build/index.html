@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <title>JOKi App</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="home">
+      <nav class="fixed-nav">
+        <div class="container">
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="logo">
+            <a href="#home">
+              <img src="./assets/img/logo.svg" alt="logo" />
+            </a>
+          </div>
+
+          <div class="links-container">
+            <ul class="links">
+              <li><a href="#why-us" class="link">Mengapa Kami?</a></li>
+              <li><a href="#pricelist" class="link">Harga</a></li>
+              <li><a href="#testimonial" class="link">Testimonial</a></li>
+              <li><a href="#our-team" class="link">Tim Kami</a></li>
+              <li><a href="#contact" class="link">Kontak</a></li>
+            </ul>
+            <button class="btn nav-btn">Mulai, Yuk!</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- BANNER/HERO -->
+      <article class="hero">
+        <div class="container">
+          <div class="hero-text">
+            <h1 class="title">
+              Merasa Kesulitan dan Gak Punya Waktu? Jokiin aja!
+            </h1>
+            <p class="body-text">
+              Minta joki semau kamu, apapun itu, mulai dari tugas akademik
+              hingga non-akademik.
+            </p>
+
+            <div class="btn-container">
+              <button class="btn btn-cta">Mulai, Yuk!</button>
+              <a href="#pricelist" class="btn btn-pricelist link">
+                Lihat Harga
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-img">
+            <img src="./assets/img/hero.svg" alt="ilustrasi" />
+          </div>
+        </div>
+      </article>
+
+      <!-- WHY-US -->
+      <article id="why-us">
+        <section class="why-us">
+          <div class="container">
+            <h1 class="title">Mengapa Memilih Kami?</h1>
+            <p class="body-text">
+              Santai, fleksibel, dan gak kaku. Kapan pun kamu butuh bantuan,
+              kita siap kerjakan!
+            </p>
+
+            <div class="benefits"></div>
+          </div>
+        </section>
+
+        <!-- VALUE PROPORTION -->
+        <section class="value-proportion">
+          <div class="container">
+            <div class="value">
+              <img src="./assets/img/value1.svg" alt="" class="value-img" />
+              <div class="value-text">
+                <h2 class="title">Kerjakan Tugasmu Satu Per-satu</h2>
+                <p class="body-text">
+                  Sedikit demi sedikit lama-lama menjadi bukit, kan? Begitu juga
+                  tugas, dikerjakan satu per-satu supaya gak pusing memaksa otak
+                  untuk berpikir multitasking.
+                </p>
+              </div>
+            </div>
+
+            <div class="value">
+              <div class="value-text">
+                <h2 class="title">Gak Usah Pusing! Pasti Kami Bantu</h2>
+                <p class="body-text">
+                  Pasti pusing banget kan kalau tugas udah numpuk? Daripada gak
+                  sempat kerjain semua, mending pakai aja jasa joki kita.
+                  Pikiran tenang, nilai aman, ya kan?
+                </p>
+              </div>
+              <img src="./assets/img/value2.svg" alt="" class="value-img" />
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- PRICELIST -->
+      <article id="pricelist" class="pricelist">
+        <div class="container">
+          <div class="pricelist-text">
+            <h1 class="title">Daftar Harga</h1>
+            <p class="body-text">Kami menawarkan harga yang kompetitif</p>
+          </div>
+
+          <div class="card-container"></div>
+        </div>
+      </article>
+
+      <!-- TESTIMONIAL -->
+      <article id="testimonial" class="testimonial">
+        <div class="container">
+          <h1 class="title">
+            Testimonial dari <br />customer kami yang sudah mempercayai jasa
+            kami
+          </h1>
+
+          <div class="carousel">
+            <div class="btn-container">
+              <button class="btn-control prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="btn-control next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- OUR TEAM -->
+      <article id="our-team" class="profile">
+        <div class="container">
+          <div class="our-team-text">
+            <h1 class="title">Tim Kami</h1>
+            <p class="body-text">
+              Kami memiliki tim yang kompeten untuk menyelesaikan tugasmu, lho!
+            </p>
+          </div>
+          <div class="card-container"></div>
+          <a href="#our-team" class="link"
+            >Lihat lebih banyak <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </article>
+
+      <!-- ASIDE -->
+      <aside id="contact">
+        <article>
+          <div class="container">
+            <section class="biodata">
+              <div class="card">
+                <h1 class="card-header">Biodata</h1>
+                <img
+                  src="./assets/img/formalMer.jpg"
+                  alt=""
+                  class="profile-pic"
+                />
+                <h2 class="name">Fajar Riadi</h2>
+                <div class="card-desc">
+                  <small>Kota</small>
+                  <p>Tangerang, Indonesia</p>
+                  <small>Email</small>
+                  <p>fajariadi.id@gmail.com</p>
+                  <small>Submission</small>
+                  <p>Belajar Dasar Pemrograman Web</p>
+                </div>
+              </div>
+            </section>
+
+            <div class="links-container">
+              <ul class="links">
+                <li><a href="#footer" class="link">About</a></li>
+                <li><a href="#why-us" class="link">Why Us?</a></li>
+                <li><a href="#our-team" class="link">Our Team</a></li>
+              </ul>
+
+              <ul class="links">
+                <li><a href="#pricelist" class="link">Pricelist</a></li>
+                <li><a href="#footer" class="link">FAQ</a></li>
+              </ul>
+            </div>
+
+            <div class="logo-container">
+              <div class="logo">
+                <img src="./assets/img/logo.svg" alt="logo" />
+              </div>
+
+              <div class="sosmed">
+                <img src="./assets/img/ig.svg" alt="sosmed" />
+                <img src="./assets/img/twt.svg" alt="sosmed" />
+                <img src="./assets/img/fb.svg" alt="sosmed" />
+              </div>
+            </div>
+          </div>
+        </article>
+      </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <p class="copyright">&copy; 2020 JOKi App.</p>
+    </footer>
+    <!-- javascript -->
+    <script type="module" src="./assets/script/app.js"></script>
+  </body>
+</html>

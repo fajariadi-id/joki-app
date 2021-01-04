@@ -1,0 +1,144 @@
+/* !::::::: NAV ::::::: */
+.nav-toggle {
+  display: none;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 999;
+  transition: var(--transition);
+}
+
+.fixed-nav.nav-bg {
+  background-color: var(--clr-white);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+.fixed-nav.nav-bg .container {
+  padding: 30px 0;
+  transition: var(--transition);
+}
+
+.fixed-nav .container {
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+  transition: var(--transition);
+}
+
+.fixed-nav .logo {
+  flex: 2;
+  cursor: pointer;
+}
+
+.fixed-nav .links-container {
+  display: flex;
+  align-items: center;
+}
+
+.fixed-nav .links {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.fixed-nav .link {
+  margin: 0 10px;
+  color: var(--clr-black);
+  padding-bottom: 5px;
+}
+
+.fixed-nav .link:hover {
+  border-bottom: 2px solid var(--clr-main);
+}
+
+.nav-btn {
+  padding: 10px 25px;
+}
+
+.nav-btn:hover {
+  background-color: var(--clr-main-hover);
+}
+
+@media (max-width: 992px) {
+  /* !::::::: NAV ::::::: */
+  .fixed-nav .container {
+    display: block;
+    height: 110px;
+  }
+
+  .fixed-nav.nav-bg .container {
+    height: 80px;
+  }
+
+  .nav-toggle {
+    position: absolute;
+    display: inline-block;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+
+  .nav-toggle:focus {
+    outline: none;
+  }
+
+  .nav-toggle:hover {
+    color: var(--clr-main-hover);
+  }
+
+  .fixed-nav .logo {
+    text-align: center;
+  }
+
+  .fixed-nav .links-container {
+    background-color: var(--clr-white);
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+  }
+
+  .fixed-nav .links-container.show-link {
+    transition: var(--transition);
+  }
+
+  .fixed-nav.nav-bg .links-container {
+    margin-top: 30px;
+  }
+
+  .fixed-nav .links {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .fixed-nav .link {
+    display: inline-block;
+    margin: 5px 0;
+  }
+
+  .fixed-nav .link:hover {
+    border-bottom: none;
+  }
+
+  .nav-btn {
+    padding: 10px 25px;
+    text-align: center;
+  }
+
+  .nav-btn:hover {
+    background-color: var(--clr-main-hover);
+  }
+}

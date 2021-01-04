@@ -1,0 +1,118 @@
+# Brief
+
+header:
+  nav:
+    LOGO:
+      logo.svg
+
+    Mengapa Kami?
+    Harga
+    Testimonial
+    Tim Kami
+    Kontak
+    Mulai, Yuk!
+
+  hero:
+    title:
+      "Merasa Kesulitan dan Gak Punya Waktu? Jokiin aja!"
+    body-text:
+      "Minta joki semau kamu, apapun itu, mulai dari tugas akademik hingga non-akademik."
+
+    CTA:
+      Mulai, Yuk!,
+      Lihat Harga
+  
+    img:
+      hero.svg
+
+    bg:
+      heroBg.svg
+
+main:
+  article:
+    section: why-us
+      title:
+        "Mengapa Memilih Kami?"
+      body-text:
+        "Santai, fleksibel, dan gak kaku. Kapan pun kamu butuh bantuan, kita siap kerjakan!"
+      Fitur:
+        title: "Deadline Kapan Saja"
+          img: deadline.svg
+        title: "Semua Kelas Pelajar/Mahasiswa/Umum "
+          img: kelas.svg
+        title: "Harga Terjangkau"
+          img: harga.svg
+    
+    section: value-prop
+      value1:
+        "Kerjakan Tugasmu Satu Per-satu"
+      body-text:
+        "Sedikit demi sedikit lama-lama menjadi bukit, kan? Begitu juga tugas, dikerjakan satu per-satu supaya gak pusing memaksa otak untuk berpikir multitasking."
+      CTA: Mulai, Yuk!
+      img: value1.svg
+
+      value2:
+        "Gak Usah Pusing! Pasti Kami Bantu"
+      body-text:
+        "Pasti pusing banget kan kalau tugas udah numpuk? Daripada gak sempat kerjain semua, mending pakai aja jasa joki kita. Pikiran tenang, nilai aman, ya kan?"
+      CTA: Mulai, Yuk!
+      img: value2.svg
+  
+  article: harga
+    title: "Harga"
+    body-text:
+      "Kami menawarkan harga yang kompetitif"
+    card:
+      title: "SD/SMP/SMA"
+      body-text: "Mulai dari"
+      harga: "Rp 10 IDR"
+      fitur: 
+        "Deadline H-7",
+        "1 kali revisi"
+      btn: Sikat?
+  
+  article: Testimonial
+    title:
+      "Testimonial dari customer kami yang sudah mempercayai jasa kami"
+    carousel:
+      img: https://randomuser.me/api/portraits/men/20.jpg
+      title: “Rasanya pengen meninggoy!”
+      body-text:
+      "Udah panik banget H-3 tugas makalah harus dikumpul, sedangkan laptop aku lagi rusak. Untung temenku rekomendasiin jasa joki ini. Alhamdulillah jadi gak harus ngulang mata kuliah😭"
+      name: "- Indah, Mahasiwa"
+
+article: Tim Kami
+  card:
+    name: "Fajar Riadi"
+    akademik: "Sistem Komputer - Universitas Gunadarma"
+    body-text: 
+      "Halo, saya yang akan mengerjakan tugas mu untuk bidang matematika, bahasa inggris, dan ilmu komputer."
+
+aside:
+  biodata:
+    title: "Biodata",
+    img: "./assets/img/formalMer.jpg",
+    name: "Fajar Riadi",
+    small:
+      "Kota",
+      "Email",
+      "Submission"
+    txt:
+      "Tangerang, Indonesia",
+      "fajariadi.id@gmail.com",
+      "Belajar Dasar Pemrograman Web"
+  link:
+    "About",
+    "Why Us?",
+    "Our Team",
+    "Pricelist",
+    "FAQ"
+  LOGO: logo.svg
+  sosmed:
+    ig.svg
+    twt.svg
+    fb.svg
+
+footer:
+  copyright:
+    "&copy; 2020 JOKi App."
