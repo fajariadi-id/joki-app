@@ -1,7 +1,7 @@
 {
-  "name": "dicoding-webDasar-submission",
+  "name": "dicoding-web-dasar-submission",
   "version": "1.0.0",
-  "description": "header:\r   nav:\r     LOGO:\r       logo.svg",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d build"
