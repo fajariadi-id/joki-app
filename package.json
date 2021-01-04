@@ -1,23 +1,24 @@
 {
   "name": "dicoding-web-dasar-submission",
   "version": "1.0.0",
-  "description": "",
+  "description": "header:\r   nav:\r     LOGO:\r       logo.svg",
   "main": "index.js",
   "scripts": {
     "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fajariadi-id/dicoding-webDasar-submission.git"
+    "url": "git+https://github.com/fajariadi-id/dicoding-web-dasar-submission.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fajariadi-id/dicoding-webDasar-submission/issues"
+    "url": "https://github.com/fajariadi-id/dicoding-web-dasar-submission/issues"
   },
-  "homepage": "https://fajariadi-id.github.io/dicoding-webDasar-submission",
+  "homepage": "https://fajariadi-id.github.io/dicoding-web-dasar-submission",
   "dependencies": {
     "gh-pages": "^3.1.0"
-  }
+  },
+  "devDependencies": {}
 }
