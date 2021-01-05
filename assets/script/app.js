@@ -25,7 +25,8 @@ const cardTeam = document.querySelector(".profile .card-container");
 
 // *=======  GLOBAL VAR =======
 // NAV HEIGHT
-const navHeight = fixedNav.clientHeight;
+// 40 -> selisih height 120px - 80px
+const navHeight = fixedNav.clientHeight - 40;
 
 // CAROUSEL ACTIVE
 let activeCarousel = 0;
@@ -36,6 +37,22 @@ window.addEventListener("DOMContentLoaded", () => {
   showPricelist(pricelist);
   showTestimonial(testimonials);
   showTeams(teams);
+
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      const id = e.target.getAttribute("href").slice(1);
+      const linkEl = document.getElementById(id);
+
+      let position = linkEl.offsetTop - navHeight;
+      window.scrollTo({
+        top: position,
+      });
+
+      linksContainer.style.height = 0;
+    });
+  });
 });
 
 // TOGGLE EVENT
@@ -55,23 +72,6 @@ navToggle.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   const scrollHeight = window.pageYOffset;
   navTransition(scrollHeight);
-});
-
-links.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    const id = e.target.getAttribute("href").slice(1);
-    const linkEl = document.getElementById(id);
-
-    // 40 -> padding top/bottom
-    let position = linkEl.offsetTop - navHeight + 40;
-    window.scrollTo({
-      top: position,
-    });
-
-    linksContainer.style.height = 0;
-  });
 });
 
 // *=======  FUNCTION =======
