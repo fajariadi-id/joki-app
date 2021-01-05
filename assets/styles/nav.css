@@ -69,21 +69,26 @@
   /* !::::::: NAV ::::::: */
   .fixed-nav .container {
     display: block;
-    height: 100px;
-  }
-
-  .fixed-nav.nav-bg .container {
-    height: 60px;
   }
 
   .nav-toggle {
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    align-items: center;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: var(--transition);
+    /* position: absolute;
     display: inline-block;
     font-size: 20px;
     background-color: transparent;
     border: none;
     cursor: pointer;
-    transition: var(--transition);
+    transition: var(--transition); */
   }
 
   .nav-toggle:focus {
@@ -95,14 +100,16 @@
   }
 
   .fixed-nav .logo {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
   }
 
   .fixed-nav .links-container {
     background-color: var(--clr-white);
     display: block;
     text-align: center;
-    margin-top: 50px;
     border-radius: 10px;
     overflow: hidden;
     height: 0;
@@ -115,7 +122,7 @@
   }
 
   .fixed-nav.nav-bg .links-container {
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
   .fixed-nav .links {

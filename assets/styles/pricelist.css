@@ -1,7 +1,7 @@
 /* !::::::: PRICELIST ::::::: */
 .pricelist {
   margin-top: 15vh;
-  padding: 5vh;
+  padding: 5vh 0;
   height: 100vh;
   background-image: var(--linear);
 }
