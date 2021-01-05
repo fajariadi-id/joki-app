@@ -1,4 +1,4 @@
-/* !::::::: ASIDE - OUR TEAM ::::::: */
+/* !::::::: OUR TEAM ::::::: */
 .profile {
   height: 100vh;
   background-image: var(--linear);
@@ -48,7 +48,7 @@
 }
 
 @media (max-width: 992px) {
-  /* !::::::: ASIDE - OUR TEAM ::::::: */
+  /* !::::::: OUR TEAM ::::::: */
   .profile {
     height: fit-content;
   }
