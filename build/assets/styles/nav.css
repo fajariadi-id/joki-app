@@ -20,14 +20,14 @@
 }
 
 .fixed-nav.nav-bg .container {
-  padding: 30px 0;
   transition: var(--transition);
+  height: 80px;
 }
 
 .fixed-nav .container {
   display: flex;
+  height: 120px;
   align-items: center;
-  padding: 40px 0;
   transition: var(--transition);
 }
 
@@ -57,7 +57,7 @@
   border-bottom: 2px solid var(--clr-main);
 }
 
-.nav-btn {
+.fixed-nav .nav-btn {
   padding: 10px 25px;
 }
 
@@ -69,11 +69,11 @@
   /* !::::::: NAV ::::::: */
   .fixed-nav .container {
     display: block;
-    height: 110px;
+    height: 100px;
   }
 
   .fixed-nav.nav-bg .container {
-    height: 80px;
+    height: 60px;
   }
 
   .nav-toggle {
