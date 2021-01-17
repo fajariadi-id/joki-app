@@ -1,6 +1,6 @@
 /* !::::::: HERO ::::::: */
 .hero {
-  background: url("../img/heroBg.svg") no-repeat;
+  background: url('../img/heroBg.svg') no-repeat;
   background-position: 60vw -80px;
 }
 
@@ -12,11 +12,11 @@
 }
 
 .hero-img img {
-  width: 40vw;
+  width: 100%;
 }
 
 .hero-text {
-  width: 55vw;
+  width: 50%;
 }
 
 .hero-text .title {
@@ -40,28 +40,29 @@
   margin-left: 10px;
 }
 
-@media (max-width: 992px) {
-  /* !::::::: HERO ::::::: */
+@media (max-width: 1100px) {
   .hero {
-    background-position: 0 -100px;
+    background-position: 400px -100px;
   }
 
   .hero .container {
-    position: relative;
-    padding-top: 40vh;
-  }
-
-  .hero-img img {
-    position: absolute;
-    top: 180px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 420px;
+    justify-content: center;
+    flex-direction: column-reverse;
   }
 
   .hero-text {
     width: 100%;
+    margin-top: 20px;
+  }
+
+  .hero-text .title {
+    width: 700px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    background-position: 0 -200px;
   }
 
   .hero-text .title {
