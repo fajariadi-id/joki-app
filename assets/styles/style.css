@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
 
-@import "./nav.css";
-@import "./hero.css";
-@import "./why-us.css";
-@import "./value-prop.css";
-@import "./pricelist.css";
-@import "./testimonial.css";
-@import "./teams.css";
-@import "./aside.css";
-@import "./footer.css";
+@import './nav.css';
+@import './hero.css';
+@import './why-us.css';
+@import './value-prop.css';
+@import './pricelist.css';
+@import './testimonial.css';
+@import './teams.css';
+@import './aside.css';
+@import './footer.css';
 
 /* *======= VARIABLE ======= */
 :root {
@@ -39,10 +39,10 @@ html {
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   background-color: var(--clr-white);
   color: var(--clr-black);
-  font-size: 16px;
+  font-size: 18px;
   width: 100%;
 }
 
@@ -101,7 +101,29 @@ h4 {
   color: var(--clr-body);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
   body {
     font-size: 14px;
   }
@@ -111,11 +133,11 @@ h4 {
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 28px;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   h3 {

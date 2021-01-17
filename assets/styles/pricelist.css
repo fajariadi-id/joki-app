@@ -2,7 +2,7 @@
 .pricelist {
   margin-top: 15vh;
   padding: 5vh 0;
-  height: 100vh;
+  height: fit-content;
   background-image: var(--linear);
 }
 
@@ -18,7 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 75vh;
+  margin-top: 70px;
 }
 
 .card {
@@ -82,44 +82,13 @@
   background-color: var(--clr-main-light);
 }
 
-@media (max-width: 992px) {
-  /* !::::::: PRICELIST ::::::: */
-  .pricelist {
-    height: fit-content;
-  }
-
+@media (max-width: 800px) {
   .card-container {
-    margin-top: 20px;
     flex-direction: column;
-    height: fit-content;
-  }
-
-  .card {
-    margin: 10px;
   }
 
   .card.best {
+    margin: 5px 0;
     transform: scale(1);
-  }
-
-  .best:hover {
-    transform: translateY(-7px);
-  }
-
-  .card.best .btn {
-    background-color: var(--clr-white);
-    color: var(--clr-main);
-  }
-
-  .card-title {
-    font-size: 16px;
-  }
-
-  .price {
-    font-size: 36px;
-  }
-
-  .price span {
-    font-size: 14px;
   }
 }

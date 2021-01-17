@@ -4,9 +4,9 @@
   margin-top: 5vh;
 }
 .value-proportion::before {
-  content: "";
+  content: '';
   position: absolute;
-  background: url("../img/valueBg.svg") no-repeat;
+  background: url('../img/valueBg.svg') no-repeat;
   width: 690px;
   height: 525px;
   right: 0;
@@ -44,40 +44,58 @@
   margin: 10px 0;
 }
 
-@media (max-width: 992px) {
-  /* !::::::: VALUE PROPORTION ::::::: */
-  .value-proportion {
-    position: relative;
-    margin-top: 5vh;
+@media (max-width: 1100px) {
+  .value-proportion::before {
+    right: -150px;
+    bottom: -100px;
   }
 
+  .value-img {
+    width: 50%;
+  }
+
+  .value-text {
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
   .value-proportion::before {
-    right: -70vw;
-    bottom: -10vh;
-    opacity: 0.5;
+    right: -300px;
+    bottom: -100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .value-proportion::before {
+    right: -200px;
+    bottom: -100px;
   }
 
   .value {
     flex-direction: column;
+    justify-content: center;
+  }
+
+  .value:nth-child(2) {
+    margin-top: 5vh;
+    flex-direction: column-reverse;
+  }
+
+  .value .title {
+    width: 100%;
+  }
+
+  .value:nth-child(2) .title {
+    width: 100%;
   }
 
   .value-img {
     width: 100%;
-    max-width: 370px;
-    margin-bottom: 20px;
-  }
-
-  .value-img:nth-child(2) {
-    position: absolute;
-    top: 0;
-  }
-
-  .value:nth-child(2) {
-    position: relative;
-    padding-top: 41vh;
   }
 
   .value-text {
+    margin-top: 10px;
     width: 100%;
   }
 }
